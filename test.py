@@ -135,17 +135,29 @@ chatroom_ids = [c['UserName'] for c in chatrooms]
 print ('正在监测的群聊：', len(chatrooms), '个')
 # print("chatroom_ids: "+ str(chatroom_ids))
 #更改群名 ：  交流群+i
+<<<<<<< HEAD
+i=1
+#for k in chatrooms.keys():
+chatrooms_rename={}
+for item in chatrooms:
+	chatrooms_rename[str(item['UserName'])]='Group'+str(i)
+	i+=1
+=======
 i=2
 #for k in chatrooms.keys():
 chatrooms_rename={}
 for item in chatrooms:
 	chatrooms_rename[str(item['UserName'])]=item['NickName']
+>>>>>>> 26ef89622c75f2d223d092018c5860e1120f347f
 	#print item['NickName']
 	#print item['UserName']
 	#print "交流群"+str(i)
 	#item['Nickname']=str(i)
+<<<<<<< HEAD
+=======
 
 	i=i-1
+>>>>>>> 26ef89622c75f2d223d092018c5860e1120f347f
 	print (item['NickName'])
 	# print (chatrooms_rename[item['UserName']])
 #重新命名之后的群名
